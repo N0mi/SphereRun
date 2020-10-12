@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
+            //TODO: Calc rotate
             ObjectPooler.Instance.SpawnFromPool("Food", Random.onUnitSphere * 15f, Quaternion.identity);
             yield return new WaitForSeconds(60f / FoodPerMinute);
         }
@@ -26,13 +27,19 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnBomb()
     {
-        yield break;
+        while (true)
+        {
+            //TODO: Calc rotate
+            ObjectPooler.Instance.SpawnFromPool("Bomb", Random.onUnitSphere * 15f, Quaternion.identity);
+            yield return new WaitForSeconds(60f / BombPerMinute);
+        }
     }
 
 
     private void StartSpawns()
     {
         StartCoroutine("SpawnFood");
+        StartCoroutine("SpawnBomb");
     }
 
 
