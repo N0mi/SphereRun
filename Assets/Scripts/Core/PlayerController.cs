@@ -42,15 +42,5 @@ public class PlayerController : MonoBehaviour
 
         rb.AddForce(gravityUp * gravity);
         rb.MovePosition(rb.position + transform.TransformDirection(MoveDirection.normalized) * Speed / 10f);
-
-        //Vector3 origin = Vector3.zero;
-
-        //Quaternion hq = ;
-        //Quaternion vq = Quaternion.AngleAxis(verical, Vector3.right);
-
-        //Quaternion q = hq * vq;
-
-        //rb.MovePosition(q * (rb.transform.position - origin) + origin);
-        //transform.LookAt(Vector3.zero, transform.up);
     }
 }

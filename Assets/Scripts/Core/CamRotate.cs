@@ -16,7 +16,7 @@ public class CamRotate : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Start");
+        
     }
 
 
@@ -34,6 +34,6 @@ public class CamRotate : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("End");
+       
     }
 }
