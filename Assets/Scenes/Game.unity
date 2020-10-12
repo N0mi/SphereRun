@@ -586,6 +586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1736982526}
   - component: {fileID: 1736982525}
+  - component: {fileID: 1736982527}
   m_Layer: 0
   m_Name: ObjectPooler
   m_TagString: Untagged
@@ -606,11 +607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - tag: Bombs
-    prefab: {fileID: 0}
-    size: 50
-  - tag: Foods
-    prefab: {fileID: 0}
+  - tag: Food
+    prefab: {fileID: 4860997079010637999, guid: b2055239c15a4d341b41ada7d36ea47b,
+      type: 3}
     size: 50
 --- !u!4 &1736982526
 Transform:
@@ -626,6 +625,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1736982527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736982524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a37c7a5264b7b4d866b570bc76dbc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4544237266325500919
 PrefabInstance:
   m_ObjectHideFlags: 0
