@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -18,7 +17,6 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            //TODO: Calc rotate
             ObjectPooler.Instance.SpawnFromPool("Food", Random.onUnitSphere * 15f, Quaternion.identity);
             yield return new WaitForSeconds(60f / FoodPerMinute);
         }
@@ -29,7 +27,6 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            //TODO: Calc rotate
             ObjectPooler.Instance.SpawnFromPool("Bomb", Random.onUnitSphere * 15f, Quaternion.identity);
             yield return new WaitForSeconds(60f / BombPerMinute);
         }

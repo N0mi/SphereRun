@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Conf;
 
 public class FoodLogic : EmptyLogic
 {
     public override void TouchAction(GameObject obj)
     {
-        ScoreManager.Score += 1;
+        ScoreManager.Score += Settings.deltaScore;
         base.TouchAction(obj);
     }
 }

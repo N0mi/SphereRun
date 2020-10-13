@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CamRotate : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class CamRotate : MonoBehaviour, IDragHandler
 {
     private Camera cam;
 
@@ -11,12 +9,6 @@ public class CamRotate : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     private void Awake()
     {
         cam = Camera.main;
-    }
-
-
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        
     }
 
 
@@ -29,11 +21,5 @@ public class CamRotate : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         cam.transform.Rotate(Vector3.right, -delta.y);
         cam.transform.Rotate(Vector3.up, delta.x);
         cam.transform.Translate(new Vector3(0, 0, -120));
-    }
-
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-       
     }
 }

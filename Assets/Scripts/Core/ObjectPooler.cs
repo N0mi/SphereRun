@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectPooler : MonoBehaviour
@@ -45,7 +44,7 @@ public class ObjectPooler : MonoBehaviour
         }
     }
 
-    public GameObject SpawnFromPool (string tag, Vector3 position, Quaternion rotation)
+    public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
     {
         if (!poolDictionary.ContainsKey(tag))
         {
